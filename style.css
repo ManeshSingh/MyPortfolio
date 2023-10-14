@@ -123,7 +123,7 @@ header p {
   justify-content: space-around;
   
   position: relative;
-  background-image: url(./photos/background\ image.png);
+  background-image: url(background\ image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
