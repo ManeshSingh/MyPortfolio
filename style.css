@@ -65,6 +65,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem;
   padding-left: 7rem;
+  padding-right: 2rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -136,12 +137,16 @@ header p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  list-style: none;
 }
 .dropdown_menu li a{
   text-decoration: none;
+  font-size: 1.1rem;
   color: white;
 }
-
+.dropdown_menu ul li a:hover {
+  color: #0ef;
+}
 
 
 /* Home section */
