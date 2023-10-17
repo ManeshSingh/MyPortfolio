@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem;
   padding-left: 7rem;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -127,7 +127,7 @@ header p {
   height: 0;
 }
 .dropdown_menu.open {
-  height: 150px;
+  height: 160px;
 }
 .dropdown_menu li{
   letter-spacing: 0.1rem;
@@ -994,7 +994,7 @@ input,textarea{
 @media (max-width:600px)
 {
   .dropdown_menu.open{
-    height: 142px;
+    height: 147px;
   }
   .dropdown_menu{
     width: 100px;
@@ -1006,10 +1006,10 @@ input,textarea{
 @media (max-width:450px)
 {
   .dropdown_menu li{
-    padding: 0.3rem;
+    padding: 0.4rem;
   }
   .dropdown_menu.open{
-    height: 135px;
+    height: 140px;
   }
 }
 
