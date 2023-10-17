@@ -64,7 +64,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.7rem;
-  padding-left: 7rem;
+  padding-left: 5rem;
   padding-right: 2.5rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
@@ -121,7 +121,7 @@ header p {
   width: 300px;
   background: rgba(255,255,255,0.1);
   position: absolute;
-  border-radius: 10px;
+  border-radius: 13px;
   display: none;
   overflow: hidden;
   height: 0;
@@ -131,13 +131,14 @@ header p {
 }
 .dropdown_menu li{
   letter-spacing: 0.1rem;
-  padding: 0.4rem;
+  padding: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   list-style: none;
+  font-family: "Bree Serif", serif;
 }
 .dropdown_menu li a{
   text-decoration: none;
@@ -1006,7 +1007,7 @@ input,textarea{
 @media (max-width:450px)
 {
   .dropdown_menu li{
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
   .dropdown_menu.open{
     height: 140px;
