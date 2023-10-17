@@ -63,7 +63,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.7rem 10%;
+  padding: 1.7rem;
+  padding-left: 7rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -106,10 +107,40 @@ header p {
   font-size: 1.6rem;
   color: white;
   display: none;
+  cursor: pointer;
 }
 
 /* Navigation Bar ends */
 
+
+/* dropdown menu */
+.dropdown_menu{
+  right: 1.5rem;
+  top: 58px;
+  width: 300px;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+  overflow: hidden;
+  height: 0;
+}
+.dropdown_menu.open {
+  height: 150px;
+}
+.dropdown_menu li{
+  letter-spacing: 0.1rem;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown_menu li a{
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -258,7 +289,6 @@ a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 40px;
   padding-top: 10px;
   margin-right: 40px;
   margin-left: 70px;
@@ -313,7 +343,7 @@ a {
   color: #0ef;
 }
 .resumebtn {
-  height: 8px;
+  height: 7px;
 }
 .resumebtn .btn {
   padding: 1rem 1.2rem;
@@ -414,6 +444,7 @@ a {
   text-align: center;
   background-color: #323946;
   border-radius: 2rem;
+  box-shadow: 1px 3px 15px 5px black;
 }
 .skill-box:hover h3 {
   color: #eac100;
@@ -599,6 +630,7 @@ a {
   transition: 0.5s ease;
   position: relative;
   cursor: pointer;
+  box-shadow: 1px 3px 15px 5px black;
 }
 .services-container .services-box:hover {
   border-color: #0ef;
@@ -662,6 +694,7 @@ a {
   box-shadow: 1px 3px 10px 10px #1f242d;
   border-radius: 2rem;
   display: flex;
+  box-shadow: 1px 3px 15px 5px black;
 }
 .portfolio-container .portfolio-box img {
   width: 100%;
@@ -752,11 +785,11 @@ a {
 .contact form .input-box {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
 }
 .contact form .input-box input,
 .contact form textarea {
-  width: 100%;
+  width: 98%;
   background-color: #1f242d;
   color: white;
   padding: 0.6rem;
@@ -764,7 +797,9 @@ a {
   font-size: 1.1rem;
   border-radius: 0.6rem;
   font-family: "Roboto Slab", serif;
-  resize: none;
+}
+input,textarea{
+  border: 1px solid #0ef;
 }
 .button {
   padding: 0.7rem 1.2rem;
@@ -841,6 +876,18 @@ a {
     font-size: 80%;
   }
 }
+@media (max-width:900px)
+{
+  .navbar{
+    display: none;
+  }
+  #menu-icon{
+    display: block;
+  }
+  .dropdown_menu{
+    display: block;
+  }
+}
 @media (max-width:600px){
   html{
     font-size: 73%;
@@ -909,17 +956,18 @@ a {
 @media (max-width:470px){
   .main_content{
     width: 95%;
-    padding-top: 180px;
+    padding-top: 200px;
+    padding-left: 10px;
   }
   .main_content h2{
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   .main_content p{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .description{
-    font-size: 0.9rem;
-    line-height: 15px;
+    font-size: 0.8rem;
+    line-height: 12px;
   }
   .social_media a{
     height: 20px;
@@ -932,15 +980,36 @@ a {
   }
 }
 
+@media (max-width:800px)
+{
+  .dropdown_menu li a{
+    font-weight: bolder;
+  }
+}
+@media (max-width:600px)
+{
+  .dropdown_menu.open{
+    height: 142px;
+  }
+  .dropdown_menu{
+    width: 100px;
+  }
+  .dropdown_menu li{
+    justify-content: end;
+  }
+}
+@media (max-width:450px)
+{
+  .dropdown_menu li{
+    padding: 0.3rem;
+  }
+  .dropdown_menu.open{
+    height: 135px;
+  }
+}
 
 /* skills section responsive */
 @media screen and (max-width: 1200px) {
-  /* navbar section */
-  .navbar ul li{
-    padding: 1px;
-    margin: 22px;
-  }
-  
   
   /* skills section */
   .container {
@@ -970,7 +1039,24 @@ a {
     margin-left: 100px;
   }
 }
-
+@media (max-width:1300px)
+{
+  .navbar ul li{
+    margin: 20px;
+  }
+}
+@media (max-width:1090px)
+{
+  .navbar ul li{
+    margin: 16px;
+  }
+}
+@media (max-width:1010px)
+{
+  .navbar ul li{
+    margin: 10px;
+  }
+}
 
 @media screen and (max-width:970px){
   .fun1{
@@ -985,12 +1071,7 @@ a {
   }
   .fun2{
     margin-left: 60px;
-  }
-
-
-  /* navbar section */
-  .navbar ul li{
-    margin: 13px;
+    margin-right: 35px;
   }
 }
 
@@ -1021,10 +1102,6 @@ a {
 
 
 
-  /* navbar section */
-  .navbar ul li{
-    margin: 8px;
-  }
 
 }
 
@@ -1081,6 +1158,7 @@ a {
   }
   .fun2{
     margin-left: 40px;
+    margin-right: 30px;
   }
   .fun2 .details, .tag{
     font-size: 1.3rem;
@@ -1125,6 +1203,12 @@ a {
   }
   .fun2{
     margin-top: 15px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .about{
+    padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -1267,11 +1351,6 @@ a {
   .services-box p{
     font-size: 1.2rem;
   }
-
-
-  .navbar ul li{
-    margin: 4px;
-  }
 }
 
 
@@ -1324,13 +1403,6 @@ a {
 
 
 
-@media (max-width:600px){
-  .navbar{
-    display: none;
-  }
-}
-
-
 
 @media (max-width:700px){
   .footer-text p{
@@ -1359,8 +1431,6 @@ a {
     font-size: 1.1rem;
   }
 }
-
-
 
 
 

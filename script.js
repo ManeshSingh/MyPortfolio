@@ -25,6 +25,18 @@ window.onscroll = () => {
 };
 
 
+// Dropdown menu
+const menuicon = document.querySelector('#menu-icon');
+const dropdownmenu = document.querySelector('.dropdown_menu');
+
+menuicon.onclick = function () {
+    dropdownmenu.classList.toggle('open')
+    const isopen = dropdownmenu.classList.contains('open')
+    menuicon.classList = isopen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
+
 
 
 
