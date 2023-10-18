@@ -1305,7 +1305,10 @@ input,textarea{
     font-size: 0.9rem;
   }
   .box-container .box p{
-    font-size: 1.04rem;
+    font-size: 0.83rem;
+  }
+  .box-container .box span{
+    font-size: 0.83rem;
   }
   .resumebtn{
     height: 3px;
