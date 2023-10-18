@@ -1234,6 +1234,7 @@ input,textarea{
   }
   .fun2{
     margin-top: 15px;
+    gap: 1.3rem;
   }
   .fun2{
     padding: 0px;
@@ -1284,6 +1285,7 @@ input,textarea{
   }
   .fun2{
     margin-top: 15px;
+    gap: 1.2rem;
   }
   .fun2{
     padding: 0px;
@@ -1352,14 +1354,34 @@ input,textarea{
     margin-top: 0rem;
   }
   .services-box h3{
-    font-size: 2.2rem;
+    font-size: 2.7rem;
+  }
+  .services-box p{
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width:450px){
+  .services{
+    height: 1350px;
+  }
+  .services-container{
+    padding-top: 20px;
+  }
+  .services-box{
+    height: 300px;
+    width: 350px;
+    margin-top: 0rem;
+    padding: 0.5rem;
+  }
+  .services-box h3{
+    font-size: 2.7rem;
   }
   .services-box p{
     font-size: 1.2rem;
   }
 }
-
-
 
 
 
