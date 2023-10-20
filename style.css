@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem;
   padding-left: 5rem;
-  padding-right: 7rem;
+  padding-right: 5rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -116,10 +116,9 @@ header p {
 
 /* dropdown menu */
 .dropdown_menu{
-  right: 2rem;
-  left: 1rem;
   top: 58px;
   width: 100vw;
+  left: 0;
   background-color: #1f242d;
   position: absolute;
   border-radius: 13px;
@@ -128,11 +127,12 @@ header p {
   height: 0;
 }
 .dropdown_menu.open {
-  height: 51vh;
+  height: 53vh;
+  overflow: hidden;
 }
 .dropdown_menu li{
   letter-spacing: 0.1rem;
-  padding: 1.4rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,7 +144,7 @@ header p {
 }
 .dropdown_menu li a{
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
 }
 .dropdown_menu ul li a:hover {
@@ -354,13 +354,13 @@ a {
   height: 7px;
 }
 .resumebtn .btn {
-  padding: 1rem 1.2rem;
+  padding: 0.6rem 1rem;
   border-radius: 0.5em;
   transition: 0.3s;
   color: black;
   background: #0ef;
   box-shadow: 0px 2px 5px 5px #0ef;
-  margin-top: 1.7rem;
+  margin-top: 2.3rem;
 }
 .resumebtn .btn span {
   font-family: "Aclonica", sans-serif;
@@ -832,6 +832,7 @@ input,textarea{
 
 /* footer section */
 .footer {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1443,7 +1444,6 @@ input,textarea{
     font-size: 1.1rem;
   }
 }
-
 
 
 
