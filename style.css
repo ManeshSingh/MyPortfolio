@@ -1304,10 +1304,9 @@ input,textarea{
   }
   .resumebtn{
     height: 3px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   .resumebtn .btn{
-    box-shadow: 0px 1px 2px 2px #0ef;
     padding: 0.6rem 0.8rem;
   }
   .resumebtn .btn span{
@@ -1355,19 +1354,21 @@ input,textarea{
   }
   .fun2 p{
     font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 8px;
   }
   .box-container .box p{
     font-size: 0.83rem;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
   .box-container .box span{
     font-size: 0.83rem;
   }
   .resumebtn{
     height: 3px;
+    margin-top: 1.5rem;
   }
   .resumebtn .btn{
-    margin-top: 1.4rem;
     padding: 0.6rem 0.8rem;
   }
   .resumebtn .btn span{
