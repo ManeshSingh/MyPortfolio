@@ -50,8 +50,8 @@ html {
 /* animation effect ends */
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 header {
@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem;
   padding-left: 5rem;
-  padding-right: 2.5rem;
+  padding-right: 7rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -117,9 +117,9 @@ header p {
 /* dropdown menu */
 .dropdown_menu{
   right: 2rem;
-  left: 2rem;
+  left: 1rem;
   top: 58px;
-  width: 99vw;
+  width: 100vw;
   background-color: #1f242d;
   position: absolute;
   border-radius: 13px;
@@ -156,7 +156,7 @@ header p {
 
 .home {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 798px;
   align-items: center;
   justify-content: space-around;
@@ -271,7 +271,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   height: 600px;
-  width: 100vw;
+  width: 100%;
   margin-top: 35px;
 }
 .fun1 {
