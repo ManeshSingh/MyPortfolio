@@ -127,7 +127,7 @@ header p {
   height: 0;
 }
 .dropdown_menu.open {
-  height: 93vh;
+  height: 90vh;
   overflow: hidden;
 }
 .dropdown_menu li{
@@ -978,14 +978,13 @@ input,textarea{
     font-size: 0.8rem;
     line-height: 12px;
   }
-  .social_media{
+  .social_media a{
     margin-right: 1rem;
   }
   .social_media a{
     height: 20px;
     width: 20px;
     line-height: 25px;
-    box-shadow: 0px 1px 2px 2px #0ef;
   }
   .social_media a i{
     font-size: 1.2rem;
@@ -993,14 +992,14 @@ input,textarea{
 }
 
 @media (max-width:400px){
-  .social_media{
-    margin-right: 1.5rem;
+  .social_media a{
+    margin-right: 1rem;
   }
 }
 @media (max-width:800px)
 {
   .dropdown_menu li a{
-    font-weight: bolder;
+    font-weight: bold;
   }
 }
 
@@ -1275,7 +1274,7 @@ input,textarea{
   }
   .fun2{
     margin-top: 15px;
-    gap: 1.2rem;
+    gap: 2rem;
   }
   .fun2{
     padding: 0px;
@@ -1287,6 +1286,9 @@ input,textarea{
   }
   .fun2 .details, .tag{
     font-size: 1.03rem;
+  }
+  #cancel{
+    display: none;
   }
   .fun2 h3{
     font-size: 1.4rem;
@@ -1302,10 +1304,10 @@ input,textarea{
   }
   .resumebtn{
     height: 3px;
+    margin-top: 2rem;
   }
   .resumebtn .btn{
     box-shadow: 0px 1px 2px 2px #0ef;
-    margin-top: 1.4rem;
     padding: 0.6rem 0.8rem;
   }
   .resumebtn .btn span{
