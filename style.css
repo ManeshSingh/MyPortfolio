@@ -1429,14 +1429,16 @@ input,textarea{
     height: 300px;
     width: 300px;
     margin-top: 0rem;
-    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
   }
   .services-box i{
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
   }
   .services-box h3{
     font-size: 2.7rem;
-    margin-bottom: 5px;
+    margin-bottom: 2rem;
   }
   .services-box p{
     font-size: 1.2rem;
