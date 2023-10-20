@@ -1427,12 +1427,16 @@ input,textarea{
   }
   .services-box{
     height: 300px;
-    width: 350px;
+    width: 300px;
     margin-top: 0rem;
     padding: 0.5rem;
   }
+  .services-box i{
+    margin-bottom: 5px;
+  }
   .services-box h3{
     font-size: 2.7rem;
+    margin-bottom: 5px;
   }
   .services-box p{
     font-size: 1.2rem;
