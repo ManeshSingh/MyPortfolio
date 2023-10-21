@@ -55,18 +55,7 @@ batan.addEventListener('click',function(e){
     }).then(
       message => {
         if(message=='OK'){
-            swal({
-                title: "Are you sure to send the message?",
-                buttons: true,
-                buttons: true,
-              })
-              .then((willDelete) => {
-                if (willDelete) {
-                  swal("Yay! Message Sent Successfully!", {
-                    icon: "success",
-                  });
-                }
-              });
+            swal("Yay!", "Message sent successfully!", "success");
         }
         else{
             swal("Something Went Wrong!", "Try again!", "error");

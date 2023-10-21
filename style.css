@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   padding: 1.7rem;
   padding-left: 5rem;
-  padding-right: 5rem;
+  padding-right: 4rem;
   background: #1f242d;
   /* z-index is important here if you want the navigation bar fixed */
   z-index: 100;
@@ -78,6 +78,7 @@ header span {
   cursor: pointer;
 }
 header p {
+  margin-left: 5rem;
   font-size: 2.2rem;
   color: white;
   font-weight: bold;
@@ -127,7 +128,7 @@ header p {
   height: 0;
 }
 .dropdown_menu.open {
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
 }
 .dropdown_menu li{
@@ -812,18 +813,20 @@ input,textarea{
   border: 1px solid #0ef;
 }
 .button {
-  padding: 0.7rem 1.2rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 0.8rem;
   background: #0ef;
-  box-shadow: 1px 3px 13px 3px #0ef;
+  box-shadow: 0px 3px 13px 3px #0ef;
   margin-top: 1.5rem;
-  font-weight: 600;
-  font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
   color: black;
   font-family: "Aclonica", sans-serif;
   border: 2px solid #0ef;
   cursor: pointer;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 .button:hover {
   box-shadow: none;
@@ -1044,6 +1047,9 @@ input,textarea{
 }
 @media (max-width:1090px)
 {
+  header p{
+    margin-left: 4.5rem;
+  }
   .navbar ul li{
     margin: 16px;
   }
@@ -1052,6 +1058,14 @@ input,textarea{
 {
   .navbar ul li{
     margin: 10px;
+  }
+}
+@media (max-width:850px){
+  header p{
+    margin-left: 0.5rem;
+  }
+  header{
+    padding-left: 2rem;
   }
 }
 
