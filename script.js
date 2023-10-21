@@ -39,6 +39,28 @@ menuicon.onclick = function () {
 
 
 
+// for contact form
+var batan = document.getElementById('batan');
+batan.addEventListener('click',function(e){
+    e.preventDefault()
+    Email.send({
+        SecureToken: "45799385-f8cb-4055-bdea-6ae0ffcfb8bb",
+        To : 'maneshsingh879@gmail.com',
+        From : 'maneshsingh4743@gmail.com',
+        Subject : document.getElementById("emailsubject").value,
+        Body : "Name:" + document.getElementById("name").value
+               + "<br> Phone No.:" + document.getElementById("phone").value
+               + "<br> Email:" + document.getElementById("email").value
+               + "<br> Subject:" + document.getElementById("msg").value
+    }).then(
+      message => alert(message)
+    );
+})
+    
+
+
+
+
 
 
 

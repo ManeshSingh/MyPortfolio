@@ -525,7 +525,7 @@ a {
 
 .skill-title h3 {
   margin: 0.5rem;
-  color: #fff;
+  color: #0ef;
   font-family: "Bubblegum Sans", cursive;
   font-size: 1.7rem;
 }
@@ -622,18 +622,18 @@ a {
 }
 .services-container .services-box {
   height: 330px;
-  width: 350px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   background: #1f242d;
   border-radius: 2rem;
-  padding: 2rem;
-  gap: 1.5rem;
+  padding: 1rem;
+  gap: 1.4rem;
   border: 3px solid #1f242d;
   transition: 0.5s ease;
   position: relative;
@@ -800,11 +800,13 @@ a {
   width: 98%;
   background-color: #1f242d;
   color: white;
-  padding: 0.6rem;
-  margin: 0.2rem;
-  font-size: 1.1rem;
-  border-radius: 0.6rem;
+  padding: 0.8rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.7rem;
   font-family: "Roboto Slab", serif;
+  resize: none;
+  border: 0;
 }
 input,textarea{
   border: 1px solid #0ef;

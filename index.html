@@ -224,7 +224,7 @@
         <div class="services-box" data-aos="fade-down">
           <i class="fa-solid fa-paintbrush"></i>
           <h3><span>Graphic</span> Designing</h3>
-          <p>For me, the role of a graphic designer is to create visual concepts that inspire and captivate consumers. A good graphic designer enables effective marketing by creating a brand appeal.
+          <p>For me, the role of a graphic designer is to create visual concepts that inspire and captivate consumers. I can make high quality designs and the tool that I generally use is Canva.
           </p>
         </div>
 
@@ -309,19 +309,19 @@
     <section class="contact" id="contact">
       <h2 class="heading"><i class="fa-solid fa-phone-volume"></i>Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form method="post">
         <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email address">
+          <input type="text" id="name" placeholder="Full Name">
+          <input type="email" id="email" placeholder="Email address">
         </div>
 
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
+          <input type="phone" id="phone" placeholder="Mobile Number">
+          <input type="text" id="emailsubject" placeholder="Email Subject">
         </div>
 
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
-        <input type="submit" value="Send message" class="button">
+        <textarea name="" id="msg"  rows="6" placeholder="How can I help you ?" ></textarea>
+        <input type="submit" id="batan" value="Send message" class="button">
       </form>
     </section>
     <!-- contact section ends -->
@@ -374,6 +374,10 @@
         delay: 300
       });
     </script>
+
+    <!-- Below is the link for SMTP JS for contact us page -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 
     <!-- Here, we have link our JS file in HTML -->
     <script src="script.js"></script>
