@@ -48,12 +48,30 @@ batan.addEventListener('click',function(e){
         To : 'maneshsingh879@gmail.com',
         From : 'maneshsingh4743@gmail.com',
         Subject : document.getElementById("emailsubject").value,
-        Body : "Name:" + document.getElementById("name").value
-               + "<br> Phone No.:" + document.getElementById("phone").value
-               + "<br> Email:" + document.getElementById("email").value
-               + "<br> Subject:" + document.getElementById("msg").value
+        Body : "Name :" + " " + document.getElementById("name").value
+               + "<br> Phone No. :" + " " + document.getElementById("phone").value
+               + "<br> Email :" + " " + document.getElementById("email").value
+               + "<br> Subject :" + " " + document.getElementById("msg").value
     }).then(
-      message => alert(message)
+      message => {
+        if(message=='OK'){
+            swal({
+                title: "Are you sure to send the message?",
+                buttons: true,
+                buttons: true,
+              })
+              .then((willDelete) => {
+                if (willDelete) {
+                  swal("Yay! Message Sent Successfully!", {
+                    icon: "success",
+                  });
+                }
+              });
+        }
+        else{
+            swal("Something Went Wrong!", "Try again!", "error");
+        }
+      }
     );
 })
     
