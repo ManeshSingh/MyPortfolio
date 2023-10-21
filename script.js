@@ -55,7 +55,7 @@ batan.addEventListener('click',function(e){
     }).then(
       message => {
         if(message=='OK'){
-            swal("Yay!", "Message sent successfully!", "success");
+            swal("Yay!", "Message Sent Successfully!", "success");
         }
         else{
             swal("Something Went Wrong!", "Try again!", "error");
